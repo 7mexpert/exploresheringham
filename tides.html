@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tide Times - Sheringham Beach</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .tides-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        .tides-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .tides-header h1 {
+            font-size: 2.5rem;
+            color: #1976d2;
+            margin-bottom: 0.5rem;
+        }
+
+        .tides-header p {
+            font-size: 1.2rem;
+            color: #546e7a;
+        }
+
+    .tides-widget {
+        background: white;
+        border-radius: 25px;
+        padding: 2rem;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+        border: 3px solid #e3f2fd;
+        margin: 0 auto;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+        .tides-info {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .tides-info h2 {
+            color: #1a237e;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .tides-info p {
+            color: #546e7a;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 3rem;
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #1565c0;
+        }
+
+        @media (max-width: 768px) {
+            .tides-widget {
+                padding: 1.5rem;
+                border-radius: 20px;
+            }
+
+            .tides-info h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html#directory" class="nav-item">📋 Directory</a>
+            <a href="tides.html" class="nav-item active">🌊 Tide Times</a>
+            <a href="webcam.html" class="nav-item">📹 Webcam</a>
+            <a href="pricing.html" class="nav-item">🏪 Businesses</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1 class="title">Explore Sheringham</h1>
+        <p class="subtitle">Tide Times - Sheringham Beach</p>
+    </header>
+
+    <div class="tides-container">
+        <div class="tides-header">
+            <h1>🌊 Tide Times</h1>
+            <p>Plan your perfect beach day with accurate tide information for Sheringham</p>
+        </div>
+
+        <div class="tides-widget">
+            <div class="tides-info">
+                <h2>Sheringham Tide Times & Weather</h2>
+                <p>Stay safe and enjoy the beach with real-time tide predictions, weather forecasts, and coastal conditions for Cromer, Norfolk.</p>
+            </div>
+
+            <script type="text/javascript" src="https://tides.today/en/%F0%9F%8C%8D/england/norfolk/cromer/widget.js" async></script>
+            <script src="https://tides.today/en/%F0%9F%8C%8D/england/norfolk/cromer/widget-init.js?includeMap=true&includeWeather=true&includeStyles=true&includeTitle=true&numberDays=5&weatherUnit=c" async></script>
+            <div id="tidewidget__71"></div>
+        </div>
+
+        <a href="index.html" class="back-link">← Back to Explore Sheringham</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
